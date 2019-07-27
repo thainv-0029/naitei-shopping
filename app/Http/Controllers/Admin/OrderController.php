@@ -9,7 +9,8 @@ use App\Order;
 class OrderController extends Controller
 {
     public function show(){
-        $order = Order::all();
-        dd($order);
+        $orders = Order::all();
+        
+        return view ('admin.order', compact('orders'));
     }
 }

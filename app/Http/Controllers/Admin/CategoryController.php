@@ -9,7 +9,8 @@ use App\Category;
 class CategoryController extends Controller
 {
     public function show(){
-        $category = Category::all();
-        dd($category);
+        $categories = Category::all();
+        
+        return view ('admin.category', compact('categories'));
     }
 }

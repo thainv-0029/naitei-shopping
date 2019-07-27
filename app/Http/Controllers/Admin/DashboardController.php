@@ -18,6 +18,7 @@ class DashboardController extends Controller
         $categories = Category::all()->count();
         $orders = Order::all()->count();
 
-        dd($users, $products, $categories, $orders);
+        return view('admin.dashboard', compact('users', 'products', 'categories', 'orders'));
     }
 }
+

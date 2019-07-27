@@ -10,6 +10,8 @@ class UserController extends Controller
 {
     public function show(){
         $users = User::where('role', '!=', '1')->get();
-        dd($users);
+        
+        return view ('admin.user', compact('users'));
     }
 }
+

@@ -9,7 +9,8 @@ use App\Product;
 class ProductController extends Controller
 {
     public function show(){
-        $product = Product::all();
-        dd($product);
+        $products = Product::all();
+
+        return view ('admin.product', compact('products'));
     }
 }
