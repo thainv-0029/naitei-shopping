@@ -68,7 +68,7 @@ return [
                 'des' => 'Description',
             ]
         ]
-    ]
-            
-
+    ],
+    'success' => "SUCCESS",
+    'error' => 'ERROR',
 ];

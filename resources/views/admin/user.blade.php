@@ -31,6 +31,7 @@
         <div class="card">
           <div class="card-header">
             <strong class="card-title">@lang('admin.dashboard.table.user')</strong>
+            <a href="{{route('create_user_form')}}" class="btn btn-outline-secondary float-right"><i class="fa fa-plus"></i>&nbsp; Create</a>
           </div>
           <div class="card-body">
             <table id="bootstrap-data-table-export" class="table table-striped table-bordered">

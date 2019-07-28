@@ -31,6 +31,7 @@
         <div class="card">
           <div class="card-header">
             <strong class="card-title">@lang('admin.dashboard.table.category')</strong>
+            <button type="button" class="btn btn-outline-secondary float-right"><i class="fa fa-plus"></i>&nbsp; Create</button>
           </div>
           <div class="card-body">
             <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
@@ -46,7 +47,7 @@
                 <tr>
                   <td>{{$c->id}}</td>
                   <td>{{$c->name}}</td>
-                  <td>{{$c->des}}</td>
+                  <td>{{$c->description}}</td>
                 </tr>
                 @endforeach
               </tbody>
