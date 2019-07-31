@@ -3,10 +3,10 @@
   "description": "",
   "main": "",
   "authors": [
+    "Bui Ke Dung <dungbk-0030@github.com>",
     "thainv-0029 <nguyen.viet.thai@sun-asterisk.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/thainv-0029/naitei-shopping",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "admin_template": "https://github.com/thainv-0029/naitei-shopping-admin.git",
-    "naitei_shopping": "https://github.com/dungbk-0030/naitei-shopping-template.git"
+    "naitei-shopping": "https://github.com/dungbk-0030/naitei-shopping-template.git"
   }
 }
