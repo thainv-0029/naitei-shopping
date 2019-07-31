@@ -18,6 +18,16 @@
 <!-- Start Menu Grid Area -->
 <section class="food__menu__grid__area section-padding--lg">
     <div class="container">
+        <!-- Start Search Area -->
+        <div class="food__search">
+            <h4 class="side__title">{{ __('home.search') }}</h4>
+            <div class="serch__box">
+                <input type="text" placeholder="{{ __('home.search') }}">
+                <a href="#"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <br />
+        <!-- End Search Area -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="food__nav nav nav-tabs" role="tablist">
@@ -45,7 +55,7 @@
                         <!-- Start Single Food -->
                         <div class="single__food__list d-flex wow fadeInUp">
                             <div class="food__list__thumb">
-                                <a href="#">
+                                <a href="{{ route('product_detail', $product->id) }}">
                                     <img src="{{ asset('bower_components/naitei-shopping/shopping-assets/images/products/'.$product->img) }}"
                                         alt="list food images">
                                 </a>
@@ -99,5 +109,4 @@
     </div>
 </section>
 <!-- End Menu Grid Area -->
-
 @endsection

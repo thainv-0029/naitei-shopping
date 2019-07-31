@@ -34,4 +34,5 @@ return [
         'contact-to-admin' => 'Contact to admin',
         'contact-to-store' => 'Contact to store',
     ],
+    'search' => 'Search',
 ];
