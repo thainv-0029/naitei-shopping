@@ -5,7 +5,11 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Role;
+use App\Order;
+use App\Product;
 use App\Comment;
+
 class User extends Authenticatable
 {
     use Notifiable;
@@ -40,5 +44,17 @@ class User extends Authenticatable
     public function comments()
     {
         return $this->hasMany(Comment::class);
+    }
+
+    public function role(){
+        return $this->hasOne(Role::class, 'id');
+    }
+
+    public function orders(){
+        return $this->hasMany(Order::class, 'user_id');
+    }
+
+    public function commentProducts(){
+        return $this->belongsToMany(Product::class, 'comments', 'product_id', 'user_id');
     }
 }
