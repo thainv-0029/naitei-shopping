@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="{{ asset('bower_components/naitei-shopping/shopping-assets/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('bower_components/naitei-shopping/shopping-assets/css/plugins.css') }}">
 	<link rel="stylesheet" href="{{ asset('bower_components/naitei-shopping/shopping-assets/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('bower_components/naitei-shopping/shopping-assets/css/custom.css') }}">
 	<script type="text/javascript"
 		src="{{ asset('bower_components/naitei-shopping/shopping-assets/js/jquery.min.js') }}"></script>
 	<link rel="stylesheet"

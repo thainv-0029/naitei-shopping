@@ -8,4 +8,5 @@ return [
     'checkout' => 'Checkout',
     'total' => 'Total',
     'order-now' => 'Order Now',
+    'add-to-cart' => 'Add to cart',
 ];
