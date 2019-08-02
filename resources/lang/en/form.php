@@ -7,4 +7,7 @@ return [
     'email' => 'Email address',
     'name' => 'User Name',
     'phone-number' => 'Phone Number',
+    'forgot' => 'Forgot',
+    'not-member' => 'Not a member',
+    'have-account' => 'Have an account',
 ];

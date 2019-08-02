@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +20,8 @@ Route::prefix('/admin')->group(function(){
 });
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/product/{id?}', 'ProductController@show')->name('product_detail');
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login');
+Route::get('/register', 'Auth\RegisterController@create')->name('register');
+Route::post('/register', 'Auth\RegisterController@store');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
