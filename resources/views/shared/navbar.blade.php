@@ -6,7 +6,7 @@
                 <div class="col-lg-2 col-sm-4 col-md-6 order-1 order-lg-1">
                     <div class="logo">
                         <a href="#">
-                            <img src="{{ asset('images/logo/foody.png') }}" alt="logo images">
+                            <img src="{{ asset('/bower_components/naitei-shopping/shopping-assets/images/foody.png') }}" alt="logo images">
                         </a>
                     </div>
                 </div>
@@ -31,8 +31,22 @@
                 </div>
                 <div class="col-lg-1 col-sm-4 col-md-4 order-2 order-lg-3">
                     <div class="header__right d-flex justify-content-end">
-                        <div class="log__in">
-                            <a class="accountbox-trigger" href="#"><i class="zmdi zmdi-account-o"></i></a>
+                        <div class="log__in dropdown">
+                            <a class="accountbox-trigger dropdown-toggle" data-toggle="dropdown"><i
+                                    class="zmdi zmdi-account-o"></i></a>
+                                    @if (Auth::check())
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">{{ __('home.profile') }}</a>
+                                        <a class="dropdown-item" href="{{ route('logout') }}">{{ __('auth.logout') }}</a>
+                                    </div>
+        
+                                    @else
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="{{ route('login') }}">{{ __('auth.login') }}</a>
+                                        <a class="dropdown-item" href="{{ route('register') }}">{{ __('auth.register') }}</a>
+                                    </div>
+        
+                                    @endif
                         </div>
                         <div class="shopping__cart">
                             <a class="minicart-trigger" href="#"><i class="zmdi zmdi-shopping-basket"></i></a>

@@ -38,11 +38,11 @@
 	<!-- //Main wrapper -->
 
 	<!-- JS Files -->
-	<script src="{{ asset('js/modernizr-3.5.0.min.js') }}"></script>
-	<script src="{{ asset('js/popper.min.js') }}"></script>
-	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('js/plugins.js') }}"></script>
-	<script src="{{ asset('js/active.js') }}"></script>
+	<script src="{{ asset('bower_components/naitei-shopping/shopping-assets/js/modernizr-3.5.0.min.js') }}"></script>
+	<script src="{{ asset('bower_components/naitei-shopping/shopping-assets/js/popper.min.js') }}"></script>
+	<script src="{{ asset('bower_components/naitei-shopping/shopping-assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('bower_components/naitei-shopping/shopping-assets/js/plugins.js') }}"></script>
+	<script src="{{ asset('bower_components/naitei-shopping/shopping-assets/js/active.js') }}"></script>
 </body>
 
 </html>

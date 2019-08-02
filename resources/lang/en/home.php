@@ -35,4 +35,5 @@ return [
         'contact-to-store' => 'Contact to store',
     ],
     'search' => 'Search',
+    'profile' => 'Profile',
 ];
