@@ -36,4 +36,5 @@ return [
     ],
     'search' => 'Search',
     'profile' => 'Profile',
+    'comment' => 'Comment',
 ];

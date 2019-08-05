@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Product;
+use App\Comment;
 
-class ProductController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,9 +46,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        $product = Product::whereId($id)->with('comments')->firstOrFail();
-        
-        return view('product', compact('product'));
+        //
     }
 
     /**
@@ -83,5 +81,17 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function comment(Request $request) 
+    {
+        $comment = new Comment(array(
+            'user_id' => $request->get('user_id'),
+            'product_id' => $request->get('product_id'),
+            'content' => $request->get('comment'),
+        ));
+        $comment->save();
+        
+        return redirect(action('ProductController@show', $request->get('product_id')));
     }
 }

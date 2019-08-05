@@ -49,14 +49,17 @@
                     </div>
                     <!-- Start Product Descrive Area -->
                     <div class="menu__descrive__area">
-                        <h2>{{ __('user.comment') }}</h2>
-                        <form method="POST">
+                        <h2>{{ __('home.comment') }}</h2>
+                        <form method="POST" action="{{ route('user.comment')}}">
                             @csrf
-                            <input type="hidden" value="{{ $product->id }}" name="product">
-                            {{-- <input type="hidden" value="{{ App::user()->id }}" name="user"> --}}
+                            @if (Auth::check())
+                            <input type="hidden" value="{{ $product->id }}" name="product_id">
                             <textarea class="comment-box" name="comment"></textarea>
-                            <button class="btn btn-primary send-button pull-right">{{ __('product.send').' ' }}<i
-                                    class="fa fa-check"></i></button>
+                            <input type="hidden" value="{{ Auth::user()->id }}" name="user_id">
+                            <button class="btn btn-primary send-button pull-right">{{ __('form.send').' ' }}<i class="fa fa-check"></i></button>
+                            @else
+                            <textarea class="comment-box" name="comment" disabled placeholder="{{ __('message.login-to-comment') }}"></textarea>
+                            @endif
                         </form>
                         <h4 class="side__title">{{ __('product.reviews') }}</h4>
                         <!-- Start Tab Content -->
