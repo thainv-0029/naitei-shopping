@@ -10,4 +10,5 @@ return [
     'forgot' => 'Forgot',
     'not-member' => 'Not a member',
     'have-account' => 'Have an account',
+    'send' => 'Send',
 ];

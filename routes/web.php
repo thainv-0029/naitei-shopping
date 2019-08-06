@@ -25,3 +25,4 @@ Route::post('/login', 'Auth\LoginController@login');
 Route::get('/register', 'Auth\RegisterController@create')->name('register');
 Route::post('/register', 'Auth\RegisterController@store');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('/product/{id?}', 'UserController@comment')->name('user.comment');
