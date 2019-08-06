@@ -74,7 +74,7 @@
                                 <li><i class="fa fa-table"></i><a
                                         href="{{ route('admin_order_index') }}">@lang('admin.dashboard.table.order')</a></li>
                                 <li><i class="fa fa-table"></i><a
-                                        href="{{route('admin_category_index')}}">@lang('admin.dashboard.table.category')</a>
+                                        href="{{ route('admin_category_index') }}">@lang('admin.dashboard.table.category')</a>
                                 </li>
                             </ul>
                         </li>
