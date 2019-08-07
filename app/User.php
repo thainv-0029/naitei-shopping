@@ -2,12 +2,15 @@
 
 namespace App;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Role;
 use App\Order;
 use App\Product;
+use App\Enums\Status;
 use App\Comment;
 
 class User extends Authenticatable

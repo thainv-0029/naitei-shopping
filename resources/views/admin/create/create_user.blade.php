@@ -50,7 +50,7 @@
                             @endforeach
                         </div>
                     @endif
-                    <form class="card-body card-block" method="POST" action="{{ route('admin_user_store')}}">
+                    <form class="card-body card-block" method="POST" action="{{ route('admin_user_store') }}">
                         @csrf
                         <div class="row form-group">
                             <div class="col-1">

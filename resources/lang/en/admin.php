@@ -95,4 +95,8 @@ return [
     ],
     'success' => 'SUCCESS',
     'error' => 'ERROR',
+    'loginForm' => [
+        'email' => 'Email',
+        'pass'  => 'Password',
+    ],
 ];

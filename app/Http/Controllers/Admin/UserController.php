@@ -76,7 +76,7 @@ class UserController extends Controller
     {
         $user = $this->findUser($id);
         $roles = Role::all();
-
+        
         return view ('admin.show.show_user', compact('user', 'roles'));
     }
 
