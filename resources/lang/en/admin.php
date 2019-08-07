@@ -26,14 +26,38 @@ return [
         'table' => [
             'coloum' => [
                 'id' => 'ID',
+                'status' => 'Status',
+                'role' => 'Role',
                 'name' => 'Username',
                 'email' => 'Email',
                 'phone' => 'Phone Number',
+                'pass' => 'Password',
+                'confirm' => 'Confirm',
                 'add' => 'Address',
                 'dis' => 'District',
-                'city' => 'City'
+                'city' => 'City',
+                'action' => 'Action',
             ],
-        ]
+            'function' =>[
+                'edit' => 'Edit',
+            ],
+        ],
+        'create' => 'Create',
+        'edit' => 'Edit information',
+        'show' => 'Show information',
+        'cancel' => 'Cancel',
+        'status' => [
+            'act' => 'Active',
+            'inact' => 'Lock',
+        ],
+        'role' => [
+            'ad' => 'Admin',
+            'user' => 'User',
+        ],
+        'delete' => [
+            'title' => 'Delete this acount?',
+            'btn' => 'Delele',
+        ],
     ],
     'product' => [
         'name' => 'Manage/Product',
@@ -44,8 +68,8 @@ return [
                 'des' => 'Description',
                 'img' => 'Image',
                 'price' => 'Price',
-            ]
-        ]
+            ],
+        ],
     ],
     'order' => [
         'name' => 'Manage/Order',
@@ -56,8 +80,8 @@ return [
                 'add' => 'Address',
                 'pay' => 'Payment',
                 'total' => 'Total',
-            ]
-        ]
+            ],
+        ],
     ],
     'category' => [
         'name' => 'Manage/Category',
@@ -66,9 +90,9 @@ return [
                 'id' => 'ID',
                 'name' => 'Category Name',
                 'des' => 'Description',
-            ]
-        ]
+            ],
+        ],
     ],
-    'success' => "SUCCESS",
+    'success' => 'SUCCESS',
     'error' => 'ERROR',
 ];
